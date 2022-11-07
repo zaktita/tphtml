@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulaire</title>
+  </head>
+  <body>
+    <!-- en tete de la page -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="home">home</a></li>
+          <li><a href="about">about</a></li>
+          <li><a href="portfolio">portfolio</a></li>
+          <li><a href="contact">contact</a></li>
+        </ul>
+        <span>
+          <input type="search" name="searchbox" id="searchbox" />
+          <input type="button" value="search" />
+        </span>
+      </nav>
+    </header>
+    <!-- fin entete -->
+    <main>
+      <h1>formulaire</h1>
+      <form action="">
+        <!-- form fields  -->
+        <label for="nom">nom</label><br />
+        <input type="text" name="nom" id="nom" /> <br />
+        <label for="email">email</label> <br />
+        <input type="email" name="email" id="email" /> <br />
+        <br />
+        <input type="submit" value="envoyer" /> <br />
+
+        <br />
+        <!-- radio buttons -->
+        <section border="1">
+          <fieldset>
+            <legend>couleur</legend>
+            <input type="radio" name="couleur" id="couleur" />
+            <label for="couleur">rouge</label> <br />
+            <input type="radio" name="couleur" id="couleur2" />
+            <label for="couleur2">bleu</label> <br />
+            <input type="radio" name="couleur" id="couleur3" />
+            <label for="couleur3">vert</label> <br />
+            <input type="radio" name="couleur" id="couleur4" />
+            <label for="couleur4">blanc</label> <br />
+          </fieldset>
+        </section>
+        <br />
+        <!-- dropdown -->
+        <label for="fruit">choisissez un fruit</label> <br />
+        <select name="fruit" id="fruit">
+          <option value="fraise">fraise</option>
+          <option value="orange">orange</option>
+          <option value="banane">banane</option>
+          <option value="pomme">pomme</option>
+        </select>
+        <br />
+        <br />
+        <!-- textarea -->
+        <textarea name="sujet" id="sujet" cols="30" rows="10">
+decrivez votre problem
+        </textarea>
+        <br />
+        <br />
+        <label for="upload">choisissez un fichier</label> <br />
+        <input type="file" name="upload" id="upload" multiple />
+        <br />
+        <br />
+        <input type="submit" value="envoyer" />
+      </form>
+      <br />
+      <table border="1" width="400px">
+        <tr>
+          <th colspan="3">parcours</th>
+        </tr>
+        <tr>
+          <td rowspan="2">ecole</td>
+          <td colspan="2">formation</td>
+        </tr>
+        <tr>
+          <td>titre</td>
+          <td>date</td>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>
